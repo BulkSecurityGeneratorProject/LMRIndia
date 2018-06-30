@@ -1,0 +1,11 @@
+version: '2'
+services:
+    lmrindia-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/LMRIndia/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=LMRIndia
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
